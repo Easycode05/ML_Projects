@@ -1,0 +1,30 @@
+Exercise 1
+INSERT INTO customer (companyName, contactName, contactTitle, city, country)
+VALUES ("Tesla", "Gabriel, Match", "Media Representative", "Lagos", "Nigeria" );
+
+UPDATE customer
+SET contactName = "Olatunji, Kelechi"
+WHERE custId = 92
+
+DELETE FROM customer
+WHERE custId = 92
+
+
+Exercise 2
+SELECT * FROM customer
+WHERE region IS NULL
+
+SELECT * FROM customer
+WHERE region IS NOT NULL
+
+
+Exercise 3
+SELECT * FROM customer
+LIMIT 5
+
+SELECT * FROM customer
+ORDER BY country 
+LIMIT 10
+
+SELECT * FROM customer
+LIMIT 6 OFFSET 2
